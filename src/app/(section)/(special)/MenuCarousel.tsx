@@ -119,12 +119,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <>
       <div className="z-50 flex w-full h-screen flex-col items-center">
         <div className="embla-menu">
-          <div ref={emblaRef}>
+          <div className="overflow-hidden md:overflow-visible" ref={emblaRef}>
             <div className="embla-menu__container">
               {slides.map((item, index) => (
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full w-full">
-                    <div className=" bg-white bg-opacity-5 backdrop-blur-lg border border-white/20 pb-16 rounded-full flex flex-col items-center">
+                    <div className=" bg-white bg-opacity-5 backdrop-blur-lg border border-white/20 md:pb-16 rounded-full flex flex-col items-center">
                       <div className="md:hidden">
                         <ModelBox
                           src={item.modelUrl}
