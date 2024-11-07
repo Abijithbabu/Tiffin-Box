@@ -34,34 +34,34 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
             >
               <Link href="/menu" className="flex gap-2 py-6"><Dock /> <span>View Menu</span></Link>
             </Button>
-            {/* <Button
-              asChild
-              variant="link"
-              className="w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
-            >
-              <Link href="/about-us" className="flex gap-2 py-6"><ShieldQuestion /> <span>About</span> </Link>
-            </Button>
             <Button
+              asChild
               variant="link"
               className="w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
-              asChild
             >
-              <Link href="/contact" className="flex gap-2 py-6"><Phone /> <span>Contact</span></Link>
-            </Button> */}
+              <Link href="#" className="flex gap-2 py-6"><Gift /> <span>Order Online</span> </Link>
+            </Button>
             <Button
               asChild
               variant="link"
               className="w-full flex justify-start px-1 p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
             >
-              <Link href="/table-booking" className="flex gap-2 py-6"><BookCheck /> <span>Table Booking</span> </Link>
+              <Link href="/table-booking" className="flex gap-2 py-6"><BookCheck /> <span>Book A Table</span> </Link>
             </Button>
-            {/* <Button
+            <Button
               asChild
               variant="link"
-              className="w-full flex justify-start p-0 uppercase text-accent text-white"
+              className="w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
             >
-              <Link href="/gift-voucher" className="flex gap-2 py-6" ><Gift /> <span>Gift Voucher</span></Link>
-            </Button> */}
+              <Link href="#" className="flex gap-2 py-6" ><ShieldQuestion /><span>About Us</span></Link>
+            </Button>
+            <Button
+              variant="link"
+              className="w-full flex justify-start p-0 uppercase text-accent text-white"
+              asChild
+            >
+              <Link href="#" className="flex gap-2 py-6"><Phone /> <span>Contact Us</span></Link>
+            </Button>
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
