@@ -1,31 +1,40 @@
 import Special from "@/app/(section)/(special)/Special";
-import Booking from "@/app/(section)/Booking";
-import ExploreMenu from "@/app/(section)/ExploreMenu";
-import Gallery from "@/app/(section)/Gallery";
 import Hero from "@/app/(section)/Hero";
 import Reviews from "@/app/(section)/Reviews";
-import WeOffer from "@/app/(section)/WeOffer";
 import ViewMenu from "@/components/floating-buttons/ViewMenu";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import AboutUs from "./(section)/AboutUs";
+import OnlineOrder from "./(section)/OnlineOrder";
+import BookTable from "./(section)/BookTable";
+import WhyTiffinBox from "./(section)/WhyTiffinBox";
+import Chef from "./(section)/Chef";
+import Locations from "./(section)/Locations";
+import Community from "./(section)/Community";
+import Scrollbar from "@/components/Scrollbar";
 
 export default function HomePage() {
   return (
-    <main className="relative flex h-full w-full">
-      <div className="flex h-full w-full flex-col items-center justify-center">
-        <Navbar position="fixed" />
+    <main className="relative h-full w-full font-jakarta bg-[#090909]">
+      <div className="flex h-full w-full flex-col items-center justify-center md:px-40">
+        <Navbar />
         <Hero />
-        <ExploreMenu />
-        <WeOffer />
+        <AboutUs />
         <Special />
-        <Booking />
+        <OnlineOrder />
+        <BookTable />
+        <WhyTiffinBox />
+        <Chef />
         <Reviews />
-        <Gallery />
-        {/* <AboutUs /> */}
-        <Footer />
+        <Locations />
+        <Community />
       </div>
-      <div className="fixed bottom-2 right-2 hidden md:flex">
+      <Footer />
+      <div className="fixed top-1/2 right-40 transform -translate-y-1/2 hidden md:flex">
         <ViewMenu />
+      </div>
+      <div className="fixed top-1/2 left-40 transform -translate-y-1/2 hidden md:flex">
+        <Scrollbar />
       </div>
     </main>
   );

@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { Corinthia, Manrope, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
@@ -25,6 +25,17 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets:["latin"],
+  variable:"--plus-jakarta-sans",
+  weight:["300"]
+})
+
+const corinthia = Corinthia({
+  subsets:["latin"],
+  variable:"--corinthia",
+  weight:["400"]
+})
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -35,6 +46,8 @@ export default function RootLayout({
           "theme-custom flex min-h-screen bg-[#070707] font-manrope text-[#FBEAD2] antialiased",
           manrope.variable,
           playfair.variable,
+          plusJakarta.variable,
+          corinthia.variable
         )}
       >
         <Providers>{children}</Providers>

@@ -1,33 +1,48 @@
+import { Icons } from "@/components/Icon";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
-const Hero = ({}) => {
+const Hero = ({ }) => {
   return (
-    <section id="hero" className="flex w-full items-center justify-center">
-      <div className="relative flex min-h-[100vh] w-full items-center justify-center">
-        <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
-          <video
-            className="min-h-full min-w-full object-cover"
-            style={{ objectPosition: "30% center" }}
-            src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bavette-restaurant.mov"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bavette-thumbnail.png"
-          ></video>
+    <section id="hero" className="flex w-full pl-40 justify-center">
+      <div className="flex flex-row min-h-screen h-1 w-full justify-center">
+        <div className="flex w-1/3 h-full flex-col gap-8 items-start justify-start pt-40 z-10">
+          <Image
+            src="/images/landing-page/logo.png"
+            width={84}
+            height={58}
+            alt="steak house"
+          />
+          <p className="font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight text-stone-400">
+            Authentic<br />
+          </p>
+          <p className="font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight text-stone-400">
+            south&nbsp;Indian
+          </p>
+          <p className="font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight text-stone-400">
+            Cusine
+          </p>
+          <Button
+            className="group items-center gap-[1.19rem] bg-transparent border border-white hover:bg-primary"
+            variant="secondary"
+            asChild
+          >
+            <Link href="/menu" className="group flex items-center space-x-2">
+              <p className="text-white group-hover:text-black duration-300">Order Now</p>
+              <Icons.rightArrow className="text-yellow group-hover:text-black duration-300 ease-in-out transform group-hover:translate-x-1" />
+            </Link>
+          </Button>
         </div>
-        <div className="z-50 flex h-full w-full max-w-[1300px] items-center justify-center">
-          <div className="flex w-fit flex-col items-end justify-center">
-            <h1 className="font-playfair text-7xl font-normal uppercase leading-[80%] sm:text-8xl md:text-9xl lg:text-[11.62rem]">
-              bavette
-            </h1>
+        <div className="w-2/3 h-full flex justify-center relative">
+          {/* <div className="w-full pt-[100%] flex justify-center relative"> */}
             <Image
-              src="/images/steak-house.svg"
-              width={243}
-              height={58}
-              alt="steak house"
+              src="/images/landing-page/hero.png"
+              fill
+              alt="hero"
+              objectFit="contain"
             />
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

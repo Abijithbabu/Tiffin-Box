@@ -27,67 +27,18 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
   }, []);
 
   return (
-    <nav
-      className={cn(
-        `${position} top-0 z-50 flex w-full max-w-[1300px] justify-center`,
-        isScrolled && "max-w-full bg-black",
-      )}
-    >
-      <div
+    <nav 
         className={cn(
-          "flex h-[10vh] w-full items-center transition-all duration-300 ease-in-out",
+          "absolute top-0 px-40 pt-10 flex w-full items-center transition-all duration-300 ease-in-out",
           isScrolled && "max-w-[1300px]",
         )}
       >
         <div className="flex h-full w-full items-center justify-between">
-          <Link href="/">
-            <Image
-              src="/images/logo.png"
-              width={198}
-              height={66}
-              alt="logo"
-              className="w-[100px] md:w-[150px]"
-            />
-          </Link>
-          {!isScrolled && (
-            <div className="hidden flex-row items-center justify-center gap-[3.48rem] md:flex">
-              <Button
-                asChild
-                variant="link"
-                className="px-0 uppercase text-accent"
-              >
-                <Link href="/menu">Menu</Link>
-              </Button>
-              <Button
-                asChild
-                variant="link"
-                className="px-0 uppercase text-accent"
-              >
-                <Link href="/about-us">About</Link>
-              </Button>
-              <Button
-                asChild
-                variant="link"
-                className="px-0 uppercase text-accent"
-              >
-                <Link href="/contact">Contact</Link>
-              </Button>
-              <Button
-                asChild
-                variant="link"
-                className="px-0 uppercase text-accent"
-              >
-                <Link href="/table-booking">Booking</Link>
-              </Button>
-              <Button
-                asChild
-                variant="link"
-                className="px-0 uppercase text-accent"
-              >
-                <Link href="/gift-voucher">Gift Voucher</Link>
-              </Button>
-            </div>
-          )}
+          <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="41" cy="41" r="41" fill="#0D0D0D" />
+            <path d="M24 32H59" stroke="#E8B756" stroke-width="2" />
+            <path d="M24 50H59" stroke="#E8B756" stroke-width="2" />
+          </svg>
           {!isScrolled && (
             <div className="hidden items-center justify-center gap-[2.5rem] md:flex">
               {pathname !== "/" && (
@@ -103,7 +54,7 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
                 </CartSheet>
               )}
               <Button
-                className="group items-center gap-[1.19rem] font-semibold uppercase text-[#282828] hover:bg-primary"
+                className="group bg-yellow items-center gap-[1.19rem] font-semibold text-black hover:text-[#282828] border border-black hover:bg-primary"
                 variant="secondary"
                 asChild
               >
@@ -136,7 +87,6 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
             </Sidebar>
           )}
         </div>
-      </div>
     </nav>
   );
 };

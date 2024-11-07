@@ -1,6 +1,9 @@
 "use client";
 import EmblaCarousel from "@/app/(section)/(special)/MenuCarousel";
+import { Icons } from "@/components/Icon";
+import { Button } from "@/components/ui/button";
 import type { EmblaOptionsType } from "embla-carousel";
+import Link from "next/link";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -48,17 +51,16 @@ const slideData: {
 
 const Special = ({ }) => {
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#070707]">
-      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
-        <h3 className="font-playfair uppercase italic">Special</h3>
-        <h1 className="max-w-[600px] text-center font-playfair text-5xl sm:text-7xl">
-          Bavette Signature Steaks
-        </h1>
-        <p className="max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
-          Bavette was born from a passion for bringing the finest cuts of beef
-          to the table, with a commitment to sustainability.
-        </p>
-        <div className="relative z-20 flex min-h-[400px] w-full flex-col justify-center px-2">
+    <section className="relative flex h-full w-full justify-center">
+      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12 tracking-widest font-thin">
+        <div className="flex flex-col gap-8 pt-28 items-center justify-center font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight">
+          <p className="text-lg text-yellow">
+            Featured Menu
+          </p>
+          <p>Discover our most</p>
+          <p>popular dishes</p>
+        </div>
+        <div className="relative z-20 flex w-full flex-col justify-center px-2">
           <EmblaCarousel slides={slideData} options={OPTIONS} />
         </div>
       </div>

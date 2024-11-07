@@ -6,13 +6,17 @@ import {
 } from "@/app/(section)/(special)/MenuArrowButtons";
 import { useDotButton } from "@/app/(section)/(special)/MenuDotButton";
 import "@/app/(section)/(special)/embla-menu.css";
+import { Icons } from "@/components/Icon";
 import ModelBox from "@/components/ModelBox";
+import { Button } from "@/components/ui/button";
 import type {
   EmblaCarouselType,
   EmblaEventType,
   EmblaOptionsType,
 } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useCallback, useEffect, useRef } from "react";
 
 const TWEEN_FACTOR_BASE = 0.52;
@@ -113,71 +117,57 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="z-50 flex w-full flex-col items-center gap-4">
+      <div className="z-50 flex w-full h-screen flex-col items-center">
         <div className="embla-menu">
-          <div className="embla-menu__viewport" ref={emblaRef}>
+          <div ref={emblaRef}>
             <div className="embla-menu__container">
               {slides.map((item, index) => (
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full w-full">
-                    <ModelBox
-                      src={item.modelUrl}
-                      width="400px"
-                      height="400px"
-                      cameraOrbit="0deg 40deg 0deg 5m"
-                      fieldOfView="25deg"
-                      cameraTarget="0m 0m 0m"
-                    />
+                    <div className="bg-white/10 backdrop-blur-lg border border-white/20 pb-16 rounded-full">
+                      <ModelBox
+                        src={item.modelUrl}
+                        width="400px"
+                        height="400px"
+                        cameraOrbit="0deg 40deg 0deg 5m"
+                        fieldOfView="25deg"
+                        cameraTarget="0m 0m 0m"
+                      />
+                      <div className="flex flex-col w-full items-center justify-center pb-12 font-jakarta tracking-wider font-thin">
+                        <p className="text-xl uppercase">
+                          {item?.name}
+                        </p>
+                        <p className="text-xl">
+                          £ {item?.price}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="flex w-full items-center justify-center pb-12">
-              <p className="min-h-[90px] max-w-[300px] text-center font-playfair text-4xl text-white">
-                {slides[selectedIndex]?.name}
-              </p>
-            </div>
           </div>
         </div>
-        <div className="relative flex h-auto w-full items-center justify-end gap-2 px-10 md:px-64">
-          <div className="absolute left-1/2 flex -translate-x-1/2 transform items-center gap-6">
-            <PrevButton
-              onClick={onPrevButtonClick}
-              disabled={prevBtnDisabled}
-            />
-            <NextButton
-              onClick={onNextButtonClick}
-              disabled={nextBtnDisabled}
-            />
-          </div>
-          <p className="flex items-center font-playfair text-3xl">
-            <span className="text-primary">{selectedIndex + 1}</span>/{" "}
-            {scrollSnaps.length}
-          </p>
-        </div>
+        <Button
+          className="group items-center gap-[1.19rem] bg-transparent border border-white hover:bg-primary"
+          variant="secondary"
+          asChild
+        >
+          <Link href="/menu" className="group flex items-center space-x-2">
+            <p className="text-white group-hover:text-black duration-300">Explore Full Menu</p>
+            <Icons.rightArrow className="text-yellow group-hover:text-black duration-300 ease-in-out transform group-hover:translate-x-1" />
+          </Link>
+        </Button>
       </div>
-      <div className="absolute left-0 top-0 z-10 flex h-full w-full justify-center">
-        <div
-          className="h-full w-[90%] sm:w-[70%] lg:w-[50%] xl:w-[30%]"
-          style={{
-            borderRadius: "187.5rem 187.5rem 0rem 0rem",
-            background: "linear-gradient(180deg, #161616 0%, #070707 100%)",
-          }}
+      <div className="absolute left-0 top-0 z-10 flex w-full h-full justify-center items-center">
+        <Image
+          alt="tiffin-box"
+          src="/images/landing-page/featured-bg.png"
+          width={500}
+          height={500}
+          objectFit="contain"
+          className="w-1/2 h-4/5 pb-28"
         />
-        <div className="absolute left-1/2 top-0 translate-x-16 transform sm:translate-x-24 md:translate-x-28">
-          {/* <div className="relative flex size-24 items-center justify-center">
-            <Icons.badge className="absolute z-10 h-full w-full text-primary" />
-            <p className="relative z-20 flex items-center gap-2 font-playfair text-3xl text-[#282828]">
-              $
-              <span className="flex h-fit w-fit items-center">
-                {slides[selectedIndex]?.price}
-              </span>
-            </p>
-          </div> */}
-        </div>
-        <h1 className="absolute inset-0 left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-[50%] transform items-center justify-center font-playfair text-[7rem] text-[#131313] md:text-[10rem]">
-          Special
-        </h1>
       </div>
     </>
   );

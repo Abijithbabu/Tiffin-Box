@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         manrope: ["var(--font-manrope)", ...fontFamily.sans],
         playfair: ["var(--font-playfair)", ...fontFamily.sans],
+        jakarta: ["var(--plus-jakarta-sans)"],
+        corinthia: ["var(--corinthia)"],
         sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
@@ -57,6 +59,7 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        yellow: "#FCB017"
       },
     },
   },
