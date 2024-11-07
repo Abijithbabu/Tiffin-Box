@@ -42,7 +42,7 @@ const Community = ({ }) => {
                <p>Community</p>
             </div>
             <div className="flex h-full w-full flex-col items-start justify-center">
-               <div className="grid grid-cols-2 md:grid-cols-4 w-full h-full items-center gap-2 md:gap-8">
+               <div className="grid grid-cols-2 md:grid-cols-4 w-full items-center gap-2 md:gap-8">
                   {images.map((item, index) => (
                      <div key={index} className="flex flex-col items-center gap-2">
                         <Image
