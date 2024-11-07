@@ -16,7 +16,7 @@ const Search = ({
 
   return (
     <div className="flex h-16 w-full items-center gap-[1.25rem] bg-[#0F0F0F] px-[1.5rem] py-[0.5rem] sm:min-w-[400px] md:h-auto md:w-fit md:min-w-[600px]">
-      <Icons.search className="text-primary" />
+      <Icons.search className="text-yellow" />
       <DebouncedInput
         value={query}
         onChange={handleInputChange}

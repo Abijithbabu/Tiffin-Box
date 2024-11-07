@@ -29,7 +29,7 @@ export default function HomePage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <main className="relative flex h-full w-full">
+    <main className="relative flex h-full w-full tracking-widest font-thin">
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Navbar />
         <Hero />

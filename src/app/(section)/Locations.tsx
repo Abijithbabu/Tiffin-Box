@@ -25,8 +25,7 @@ const Locations = ({ }) => {
                   alt="locations"
                   objectFit="contain"
                />
-               {/* Top-right label */}
-               <div className="absolute top-4 right-4 bg-[rgba(7,7,7,0.26)] backdrop-blur-lg text-white p-12 rounded-md tracking-widest uppercase">
+               <div className="absolute top-32 right-4 bg-[rgba(7,7,7,0.26)] backdrop-blur-lg text-white p-12 rounded-md tracking-widest uppercase">
                   <p className="text-md flex flex-col pb-8">
                      <span className="text-md w-full">
                         tiffin box
@@ -43,11 +42,9 @@ const Locations = ({ }) => {
                   </p>
                   <hr className="border-yellow border-t-2" />
                </div>
-
-               {/* Bottom-left label */}
-               <div className="absolute bottom-40 left-4 text-white p-2 rounded-md">
+               {/* <div className="absolute bottom-40 left-4 text-white p-2 rounded-md">
                   Bottom Left Label
-               </div>
+               </div> */}
             </div>
 
          </div>

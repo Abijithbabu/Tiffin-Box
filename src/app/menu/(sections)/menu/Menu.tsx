@@ -89,7 +89,7 @@ const Menu = () => {
           <div className="flex w-full items-center justify-between gap-4">
             <Search query={query} setQuery={setQuery} />
             <Button
-              className="hidden items-center gap-2 font-semibold text-black md:flex"
+              className="hidden bg-yellow items-center gap-2 font-semibold text-black md:flex"
               asChild
             >
               <Link href="\pdf\woolton-a-la-carte.pdf" target="_blank">
@@ -110,9 +110,9 @@ const Menu = () => {
                     buttonRefs.current[item._id] = el;
                   }}
                   className={cn(
-                    "w-fit border-b-2 border-b-transparent bg-primary px-6 py-4 font-semibold transition-all duration-300 ease-in-out md:bg-transparent",
+                    "w-fit border-b-2 border-b-transparent bg-primary px-6 py-4 font-thin transition-all duration-300 ease-in-out md:bg-transparent",
                     currentCategory === item._id &&
-                    "bg-[#02264E] md:border-b-primary",
+                    "bg-[#02264E] md:border-b-yellow",
                   )}
                   onClick={() => handleScrollToCategory(item._id)}
                 >

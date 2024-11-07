@@ -13,39 +13,34 @@ const slideData: {
   name: string;
 }[] = [
     {
-      name: "Albondigas",
-      price: "30",
-      modelUrl: "/models/albondigas.glb",
+      name: "Curry Leaves & Fennel Tawa Prawns",
+      price: "9.99",
+      modelUrl: "/models/model-1.glb",
     },
     {
-      name: "Bavette Special Burger",
-      price: "40",
-      modelUrl: "/models/bavette-special-burger.glb",
+      name: "Tellicherry Black Pepper Chicken",
+      price: "6.99",
+      modelUrl: "/models/model-2.glb",
     },
     {
-      name: "Crispy Steak (asado)",
-      price: "50",
-      modelUrl: "/models/crispy-steak-(asado).glb",
+      name: "Purani Dilli Ka Lamb Seekh Kebab",
+      price: "8.49",
+      modelUrl: "/models/model-3.glb",
     },
     {
-      name: "King Prawns",
-      price: "60",
-      modelUrl: "/models/king-prawns.glb",
+      name: "Tandoori Lamb Chops",
+      price: "9.99",
+      modelUrl: "/models/model-4.glb",
     },
     {
-      name: "Padron Peppers",
-      price: "80",
-      modelUrl: "/models/padron-peppers.glb",
+      name: "Mini TB Mix Kebab",
+      price: "5.99",
+      modelUrl: "/models/model-5.glb",
     },
     {
-      name: "Potato And Leek Gratin",
-      price: "100",
-      modelUrl: "/models/potato-and-leek-gratin.glb",
-    },
-    {
-      name: "Steak Tartare",
-      price: "100",
-      modelUrl: "/models/steak-tartare.glb",
+      name: "Alleppey Kozhi Curry",
+      price: "10.99",
+      modelUrl: "/models/model-6.glb",
     },
   ];
 

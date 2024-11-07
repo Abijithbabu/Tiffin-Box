@@ -21,7 +21,7 @@ const MenuItem: FC<MenuItemProps> = ({ id }) => {
   const item = getMenuItemById(id, items);
   return (
     item && (
-      <div className="z-10 flex h-[200px] w-full flex-row items-center overflow-hidden bg-[#0F0F0F]">
+      <div className="z-10 flex h-[200px] w-full flex-row items-center overflow-hidden rounded-xl shadow-lg bg-[#0F0F0F]">
         <div className="flex h-full w-[40%]">
           {item.images[0] ? (
             <Image
@@ -45,10 +45,10 @@ const MenuItem: FC<MenuItemProps> = ({ id }) => {
         </div>
         <div className="flex w-[60%] flex-col items-center justify-between gap-6 p-[2.5rem] md:flex-row">
           <div className="flex w-full flex-col gap-[1.62rem]">
-            <h2 className="w-full text-[1.25rem] font-normal leading-[150%] text-[#FBEAD2]">
+            <h2 className="w-full font-thin leading-[150%] text-[#FBEAD2]">
               {item.name}
             </h2>
-            <p className="text-[1.35rem] font-medium leading-[80%] text-[#FBEAD2]">
+            <p className="text-[1.35rem] leading-[80%] text-[#FBEAD2]">
               {getCurrencySymbol(item.price.currency)}{" "}
               {formattedItemPrice(item.price.value)}
             </p>
@@ -59,7 +59,7 @@ const MenuItem: FC<MenuItemProps> = ({ id }) => {
               <MenuItemPopup item={item}>
                 <Button
                   className={cn(
-                    "bottom-2 w-fit rounded-none bg-[#161616] text-[1.25rem] font-medium leading-[80%] text-primary hover:bg-[#141313]",
+                    "bottom-2 w-fit rounded-none bg-[#161616] text-[1.25rem] font-medium leading-[80%] text-yellow hover:bg-[#141313]",
                     !BetaMenuActive && "pointer-events-none opacity-0",
                   )}
                 >

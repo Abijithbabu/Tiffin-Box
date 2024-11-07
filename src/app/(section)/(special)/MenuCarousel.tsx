@@ -134,7 +134,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                         cameraTarget="0m 0m 0m"
                       />
                       <div className="flex flex-col w-full items-center justify-center pb-12 font-jakarta tracking-wider font-thin">
-                        <p className="text-xl uppercase">
+                        <p className="text-xl uppercase text-center">
                           {item?.name}
                         </p>
                         <p className="text-xl">
