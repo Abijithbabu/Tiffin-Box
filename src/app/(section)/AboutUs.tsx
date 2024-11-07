@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const AboutUs = ({ }) => {
   return (
-    <section id="about-us" className="flex w-full min-h-[100vh] h-1 items-center justify-center bg-yellow">
-      <div className="w-1/2 h-full flex justify-center items-center relative">
+    <section id="about-us" className="flex flex-col md:flex-row w-full md:min-h-[100vh] md:h-1 pt-8 items-center justify-center">
+      <div className="w-full md:w-1/2 h-full min-h-[400px] flex justify-center items-center relative">
         <Image
           src="/images/landing-page/about.png"
           fill
@@ -15,16 +15,19 @@ const AboutUs = ({ }) => {
           className=""
         />
       </div>
-      <div className="flex w-1/2 h-full flex-col gap-8 p-28 items-start justify-center text-black font-jakarta tracking-widest">
-        <p className="text-lg uppercase">
+      <div className="flex w-full md:w-1/2 h-full flex-col gap-8 p-12 md:p-28 items-center md:items-start justify-center text-black font-jakarta tracking-widest bg-yellow">
+        <p className="text-xs md:text-lg uppercase">
           About Us
         </p>
-        <div className="flex flex-col gap-8 text-xl font-thin sm:text-8xl md:text-9xl lg:text-6xl tracking-widest leading-tight uppercase">
+        <div className="hidden md:flex flex-col gap-8 text-xl font-thin sm:text-8xl md:text-9xl lg:text-6xl tracking-widest leading-tight uppercase">
           <p>Experience</p>
           <p>Authentic</p>
           <p>South Indian</p>
           <p>Flavors at The</p>
           <p>Tiffin Box</p>
+        </div>
+        <div className="md:hidden text-center text-xl font-thin tracking-widest leading-tight uppercase">
+          <p>Experience Authentic South Indian Flavors at The Tiffin Box</p>
         </div>
         <Button
           className="group items-center gap-[1.19rem] font-semibold text-black hover:text-[#282828] bg-transparent border border-black hover:bg-primary"

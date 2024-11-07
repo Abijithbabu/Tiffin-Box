@@ -15,7 +15,7 @@ import Scrollbar from "@/components/Scrollbar";
 
 export default function HomePage() {
   return (
-    <main className="relative h-full w-full font-jakarta bg-[#090909]">
+    <main className="relative h-full w-full font-jakarta bg-[#090909] text-white">
       <div className="flex h-full w-full flex-col items-center justify-center md:px-40">
         <Navbar />
         <Hero />

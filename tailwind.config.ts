@@ -59,7 +59,8 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-        yellow: "#FCB017"
+        yellow: "#FCB017",
+        white:"#9EA8A2",
       },
     },
   },

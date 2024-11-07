@@ -32,28 +32,28 @@ const images: {
 
 const Community = ({ }) => {
    return (
-      <section id="testimonials" className="relative flex min-h-screen w-full justify-center">
-         <div className="flex h-full w-full flex-col max-w-[1500px] items-center justify-center gap-28 tracking-widest font-thin">
-            <div className="flex flex-col gap-8 pt-24 items-center justify-center font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight">
-               <p className="text-lg text-yellow">
+      <section id="testimonials" className="relative flex md:min-h-screen w-full justify-center">
+         <div className="flex h-full w-full flex-col max-w-[1500px] items-center justify-center gap-8 md:gap-28 tracking-widest font-thin">
+            <div className="flex flex-col gap-2 md:gap-8 pt-8 md:pt-24 items-center justify-center font-jakarta text-xl font-thin uppercase sm:text-3xl md:text-5xl lg:text-6xl tracking-widest leading-tight">
+               <p className="text-xs md:text-lg text-yellow">
                   Instagram
                </p>
-               <p>Join Our </p>
+               <p>Join Our</p>
                <p>Community</p>
             </div>
-            <div className="flex h-full w-full flex-col items-start justify-center gap-4">
-               <div className="flex w-full h-full items-center gap-8">
-               {images.map((item, index) => (
-                  <div key={index} className="flex flex-col w-full h-full items-center gap-2">
-                    <Image
-                      src={item.imageUrl}
-                      width={500}
-                      height={500}
-                      objectFit="contain"
-                      alt={item.name}
-                    />
-                  </div>
-              ))}
+            <div className="flex h-full w-full flex-col items-start justify-center">
+               <div className="grid grid-cols-2 md:grid-cols-4 w-full h-full items-center gap-2 md:gap-8">
+                  {images.map((item, index) => (
+                     <div key={index} className="flex flex-col items-center gap-2">
+                        <Image
+                           src={item.imageUrl}
+                           width={500}
+                           height={500}
+                           objectFit="contain"
+                           alt={item.name}
+                        />
+                     </div>
+                  ))}
                </div>
             </div>
          </div>

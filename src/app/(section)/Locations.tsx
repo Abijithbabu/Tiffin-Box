@@ -5,29 +5,32 @@ import Link from "next/link";
 
 const Locations = ({ }) => {
    return (
-      <section id="locations" className="flex w-full justify-center">
-         <div className="flex flex-row min-h-[90vh] h-1 w-full justify-center">
-            <div className="z-10 flex w-1/2 h-full flex-col gap-8 pl-32 items-start justify-center font-jakarta tracking-widest">
-               <p className="text-lg text-yellow uppercase">
+      <section id="locations" className="flex w-full justify-center pt-10 md:pt-0">
+         <div className="flex flex-col md:flex-row md:min-h-[90vh] md:h-1 w-full justify-center">
+            <div className="z-10 flex w-full md:w-1/2 h-full flex-col gap-2 md:gap-8 md:pl-32 items-center md:items-start justify-center font-jakarta tracking-widest">
+               <p className="text-xs md:text-lg text-yellow uppercase">
                   Our Locations
                </p>
-               <div className="flex flex-col gap-8 text-xl font-thin sm:text-8xl md:text-9xl lg:text-7xl tracking-widest leading-tight uppercase">
+               <div className="hidden md:flex flex-col gap-8 text-xl font-thin sm:text-3xl md:text-5xl lg:text-6xl tracking-widest leading-tight uppercase">
                   <p>Find Us</p>
                   <p>At These</p>
                   <p>Convenient</p>
                   <p>Locations</p>
                </div>
+               <div className="md:hidden text-center text-xl font-thin tracking-widest leading-normal md:leading-tight uppercase px-8">
+                  <p>Find Us At These Convenient Locations</p>
+               </div>
             </div>
-            <div className="w-1/2 h-full flex justify-center relative">
+            <div className="w-full md:w-1/2 h-full min-h-[400px] flex justify-center relative">
                <Image
                   src="/images/landing-page/locations.png"
                   fill
                   alt="locations"
                   objectFit="contain"
                />
-               <div className="absolute top-32 right-4 bg-[rgba(7,7,7,0.26)] backdrop-blur-lg text-white p-12 rounded-md tracking-widest uppercase">
-                  <p className="text-md flex flex-col pb-8">
-                     <span className="text-md w-full">
+               <div className="absolute top-12 md:top-36 right-2 md:right-4 xl:right-8 text-xs md:text-base bg-white bg-opacity-5 backdrop-blur-lg text-white p-4 md:p-10 rounded-md tracking-widest uppercase">
+                  <p className="flex flex-col pb-2 md:pb-8">
+                     <span className="w-full">
                         tiffin box
                      </span>
                      <span className="w-full">

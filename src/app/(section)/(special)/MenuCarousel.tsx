@@ -124,17 +124,29 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               {slides.map((item, index) => (
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full w-full">
-                    <div className="bg-white/10 backdrop-blur-lg border border-white/20 pb-16 rounded-full">
-                      <ModelBox
-                        src={item.modelUrl}
-                        width="400px"
-                        height="400px"
-                        cameraOrbit="0deg 40deg 0deg 5m"
-                        fieldOfView="25deg"
-                        cameraTarget="0m 0m 0m"
-                      />
+                    <div className=" bg-white bg-opacity-5 backdrop-blur-lg border border-white/20 pb-16 rounded-full flex flex-col items-center">
+                      <div className="md:hidden">
+                        <ModelBox
+                          src={item.modelUrl}
+                          width="300px"
+                          height="300px"
+                          cameraOrbit="0deg 40deg 0deg 5m"
+                          fieldOfView="25deg"
+                          cameraTarget="0m 0m 0m"
+                        />
+                      </div>
+                      <div className="hidden md:flex">
+                        <ModelBox
+                          src={item.modelUrl}
+                          width="400px"
+                          height="400px"
+                          cameraOrbit="0deg 40deg 0deg 5m"
+                          fieldOfView="25deg"
+                          cameraTarget="0m 0m 0m"
+                        />
+                      </div>
                       <div className="flex flex-col w-full items-center justify-center pb-12 font-jakarta tracking-wider font-thin">
-                        <p className="text-xl uppercase text-center">
+                        <p className="text-base md:text-xl uppercase text-center">
                           {item?.name}
                         </p>
                         <p className="text-xl">
@@ -166,7 +178,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           width={500}
           height={500}
           objectFit="contain"
-          className="w-1/2 h-4/5 pb-28"
+          className="w-full md:w-1/2 h-4/5 pb-28"
         />
       </div>
     </>
