@@ -43,7 +43,7 @@ const Hero = ({ }) => {
           </Button>
         </div>
         <motion.div className="w-full order-1 md:order-2 md:w-2/3 h-full min-h-[500px] flex items-center justify-center relative overflow-hidden">
-          <motion.div className="w-full h-full relative" style={{ rotate: Rotate }} initial={{ rotate: -10 }} whileInView={{ rotate: 0 }} transition={{
+          <motion.div className="w-full h-full relative" style={{ rotate: Rotate }} initial={{ rotate: -10 }} animate={{ rotate: 0 }} transition={{
             ease: [0.65, 0, 0.35, 1],
             delay: 0.1,
             duration: 0.9,
