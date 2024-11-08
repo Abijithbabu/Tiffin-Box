@@ -6,11 +6,11 @@ import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
   title:
-    "Bavette Steak House | Best Beef Steak in Liverpool | Unforgettable Dining",
+    "The Tiffin Box",
   description:
-    " Discover Bavette Steak House in Woolton Village, Liverpool - the ultimate destination for perfectly aged, hand-selected steaks. Enjoy a luxurious dining experience with premium cuts, curated wines, and a warm atmosphere that makes every meal memorable.",
+    "Experience Authentic South Indian Flavors at The Tiffin Box",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
-  keywords: "Bavette Steak House, Best steak house Liverpool, beef steak Liverpool, fine dining Liverpool, steak restaurant Woolton Village, Bavette menu, premium steaks, signature steaks, curated wines, group dining Liverpool"
+  keywords: "Tiffin Box, Authentic South Indian Cusine, Comfortable Dining Experience, Expert Chefs, Health-Conscious Options, Fresh Quality Ingredients, Seamless Online Ordering & Delivery"
 };
 
 const manrope = Manrope({
@@ -26,15 +26,15 @@ const playfair = Playfair_Display({
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
-  subsets:["latin"],
-  variable:"--plus-jakarta-sans",
-  weight:["300"]
+  subsets: ["latin"],
+  variable: "--plus-jakarta-sans",
+  weight: ["300"]
 })
 
 const corinthia = Corinthia({
-  subsets:["latin"],
-  variable:"--corinthia",
-  weight:["400"]
+  subsets: ["latin"],
+  variable: "--corinthia",
+  weight: ["400"]
 })
 export default function RootLayout({
   children,
