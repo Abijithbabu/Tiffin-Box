@@ -19,21 +19,21 @@ const WhyTiffinBox = () => {
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Authentic South</h1>
               <h1 className="uppercase">Indian Cuisine</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 Our dishes are prepared using traditional recipes to bring you
                 the true flavors of South India.
               </p>
             </div>
             <div className="flex w-full flex-col pl-20 lg:pl-0 lg:pr-20">
               <h1 className="uppercase">Expert Chefs</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 Our chefs have years of experience crafting exquisite South
                 Indian dishes, ensuring every bite is a delight.
               </p>
             </div>
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Fresh, Quality Ingredients</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 We use only the finest, fresh ingredients to ensure the highest
                 quality and authentic taste in every meal
               </p>
@@ -51,14 +51,14 @@ const WhyTiffinBox = () => {
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Comfortable Dining</h1>
               <h1 className="uppercase">Experience</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 Our restaurant offers a warm and welcoming ambiance for a
                 relaxed and enjoyable dining experience.
               </p>
             </div>
             <div className="flex flex-col pl-20">
               <h1 className="uppercase">Health-Conscious Options</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 From vegetarian to gluten-free dishes, we provide healthy
                 options without compromising on flavor.
               </p>
@@ -66,7 +66,7 @@ const WhyTiffinBox = () => {
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Seamless Online</h1>
               <h1 className="uppercase">Ordering & Delivery</h1>
-              <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
+              <p className="pt-2 text-xs lg:pt-5 2xl:text-sm">
                 Enjoy your favorite dishes at home with our easy online ordering
                 and fast delivery service.
               </p>
