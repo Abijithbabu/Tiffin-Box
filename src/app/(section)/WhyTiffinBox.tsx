@@ -75,8 +75,8 @@ const WhyTiffinBox = () => {
         </div>
         <Image
           src="/images/landing-page/spoon.png"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           alt="spoon"
         />
       </div>
