@@ -23,15 +23,15 @@ const Hero = ({}) => {
             alt="steak house"
             className="hidden lg:block"
           />
-          <div className="flex flex-col gap-4">
-            <p className="hidden text-xl font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:block lg:text-4xl 2xl:text-6xl">
+          <div className="hidden lg:flex flex-col gap-4">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
               Authentic
               <br />
             </p>
-            <p className="hidden text-xl font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:block lg:text-4xl 2xl:text-6xl">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
               south&nbsp;Indian
             </p>
-            <p className="hidden text-xl font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:block lg:text-4xl 2xl:text-6xl">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
               Cuisine
             </p>
           </div>

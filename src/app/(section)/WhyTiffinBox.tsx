@@ -14,7 +14,7 @@ const WhyTiffinBox = () => {
           </p>
           <p>Our Specialties</p>
         </div>
-        <div className="relative flex h-full min-h-[90vh] w-full flex-col justify-center px-2 lg:flex-row">
+        <div className="relative flex h-full min-h-[90vh] w-full flex-col justify-center px-2 lg:px-0 lg:flex-row">
           <div className="flex w-full flex-col justify-around gap-8 px-4 lg:w-1/4 lg:items-end lg:gap-0 lg:px-0 lg:text-end">
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Authentic South</h1>
