@@ -29,7 +29,7 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
   return (
     <nav
       className={cn(
-        "absolute top-0 z-50 px-4 md:px-40 pt-10 flex w-full items-center transition-all duration-300 ease-in-out",
+        "absolute top-0 z-50 flex w-full items-center px-4 pt-10 transition-all duration-300 ease-in-out md:px-20 lg:px-28 2xl:px-40",
         isScrolled && "max-w-[1300px]",
       )}
     >
@@ -37,10 +37,17 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
         <Sidebar>
           <Button
             variant="ghost"
-            className="order-2 md:order-1 flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
+            className="order-2 flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary md:order-1"
           >
             <span className="sr-only">Menu</span>
-            <svg className="order-2 md:order-1" width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="order-2 md:order-1"
+              width="82"
+              height="82"
+              viewBox="0 0 82 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="41" cy="41" r="41" fill="#0D0D0D" />
               <path d="M24 32H59" stroke="#E8B756" stroke-width="2" />
               <path d="M24 50H59" stroke="#E8B756" stroke-width="2" />
@@ -52,10 +59,10 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
           width={50}
           height={50}
           alt="steak house"
-          className="md:hidden pl-2"
+          className="pl-2 md:hidden"
         />
         {!isScrolled && pathname !== "/" && (
-          <div className="hidden order-2 items-center justify-center gap-[2.5rem] md:flex">
+          <div className="order-2 hidden items-center justify-center gap-[2.5rem] md:flex">
             <CartSheet>
               <Button
                 variant="ghost"
@@ -70,7 +77,7 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
         )}
 
         <Button
-          className="group hidden md:flex order-2 text-xs md:text-sm bg-yellow items-center gap-[1.19rem] font-semibold text-black hover:text-[#282828] border border-black hover:bg-primary"
+          className="group order-2 hidden items-center gap-[1.19rem] border border-black bg-yellow text-xs font-semibold text-black hover:bg-yellow hover:text-[#282828] md:flex md:text-sm"
           variant="secondary"
           asChild
         >

@@ -3,10 +3,13 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const AboutUs = ({ }) => {
+const AboutUs = ({}) => {
   return (
-    <section id="about-us" className="flex flex-col md:flex-row w-full md:min-h-[100vh] md:h-1 pt-8 items-center justify-center">
-      <div className="w-full md:w-1/2 h-full min-h-[400px] flex justify-center items-center relative">
+    <section
+      id="about-us"
+      className="flex w-full flex-col items-center justify-center pt-8 lg:h-1 lg:min-h-[100vh] lg:flex-row"
+    >
+      <div className="relative flex h-full min-h-[400px] w-full items-center justify-center lg:w-1/2">
         <Image
           src="/images/landing-page/about.png"
           fill
@@ -15,22 +18,22 @@ const AboutUs = ({ }) => {
           className=""
         />
       </div>
-      <div className="flex w-full md:w-1/2 h-full flex-col gap-8 p-12 md:p-28 items-center md:items-start justify-center text-black font-jakarta tracking-widest bg-yellow">
-        <p className="text-xs md:text-lg uppercase">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-8 bg-yellow p-12 font-jakarta tracking-widest text-black lg:w-1/2 lg:items-start lg:gap-12 2xl:p-20">
+        <p className="text-xs uppercase tracking-[0.3rem] 2xl:text-sm">
           About Us
         </p>
-        <div className="hidden md:flex flex-col gap-8 text-xl font-thin sm:text-8xl md:text-9xl lg:text-6xl tracking-widest leading-tight uppercase">
+        <div className="hidden flex-col gap-4 text-xl font-thin uppercase leading-tight tracking-[0.5rem] sm:text-3xl lg:flex lg:text-4xl lg:tracking-[0.9rem] 2xl:gap-8 2xl:text-5xl">
           <p>Experience</p>
           <p>Authentic</p>
           <p>South Indian</p>
           <p>Flavors at The</p>
           <p>Tiffin Box</p>
         </div>
-        <div className="md:hidden text-center text-xl font-thin tracking-widest leading-tight uppercase">
+        <div className="text-center text-xl font-thin uppercase tracking-[0.5rem] lg:hidden">
           <p>Experience Authentic South Indian Flavors at The Tiffin Box</p>
         </div>
         <Button
-          className="group items-center gap-[1.19rem] font-semibold text-black hover:text-[#282828] bg-transparent border border-black hover:bg-primary"
+          className="group items-center gap-[1.19rem] border border-black bg-transparent font-semibold text-black hover:bg-yellow hover:text-[#282828]"
           variant="secondary"
           asChild
         >
@@ -45,7 +48,6 @@ const AboutUs = ({ }) => {
 };
 
 export default AboutUs;
-
 
 // import { Icons } from "@/components/Icon";
 // import ModelBox from "@/components/ModelBox";
@@ -87,7 +89,7 @@ export default AboutUs;
 //         </h1>
 //         <Button
 //           variant="outline"
-//           className="group mt-8 items-center gap-[1.19rem] border-primary font-semibold uppercase text-white hover:bg-primary md:mt-[5.6rem] lg:z-40 py-7"
+//           className="group mt-8 items-center gap-[1.19rem] border-primary font-semibold uppercase text-white hover:bg-primary lg:mt-[5.6rem] lg:z-40 py-7"
 //         >
 //           <Link
 //             href="/table-booking"

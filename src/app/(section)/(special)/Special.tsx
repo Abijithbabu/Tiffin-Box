@@ -12,44 +12,44 @@ const slideData: {
   price: string;
   name: string;
 }[] = [
-    {
-      name: "Curry Leaves & Fennel Tawa Prawns",
-      price: "9.99",
-      modelUrl: "/models/model-1.glb",
-    },
-    {
-      name: "Tellicherry Black Pepper Chicken",
-      price: "6.99",
-      modelUrl: "/models/model-2.glb",
-    },
-    {
-      name: "Purani Dilli Ka Lamb Seekh Kebab",
-      price: "8.49",
-      modelUrl: "/models/model-3.glb",
-    },
-    {
-      name: "Tandoori Lamb Chops",
-      price: "9.99",
-      modelUrl: "/models/model-4.glb",
-    },
-    {
-      name: "Mini TB Mix Kebab",
-      price: "5.99",
-      modelUrl: "/models/model-5.glb",
-    },
-    {
-      name: "Alleppey Kozhi Curry",
-      price: "10.99",
-      modelUrl: "/models/model-6.glb",
-    },
-  ];
+  {
+    name: "Curry Leaves & Fennel Tawa Prawns",
+    price: "9.99",
+    modelUrl: "/models/model-1.glb",
+  },
+  {
+    name: "Tellicherry Black Pepper Chicken",
+    price: "6.99",
+    modelUrl: "/models/model-2.glb",
+  },
+  {
+    name: "Purani Dilli Ka Lamb Seekh Kebab",
+    price: "8.49",
+    modelUrl: "/models/model-3.glb",
+  },
+  {
+    name: "Tandoori Lamb Chops",
+    price: "9.99",
+    modelUrl: "/models/model-4.glb",
+  },
+  {
+    name: "Mini TB Mix Kebab",
+    price: "5.99",
+    modelUrl: "/models/model-5.glb",
+  },
+  {
+    name: "Alleppey Kozhi Curry",
+    price: "10.99",
+    modelUrl: "/models/model-6.glb",
+  },
+];
 
-const Special = ({ }) => {
+const Special = ({}) => {
   return (
     <section className="relative flex h-full w-full justify-center">
-      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12 tracking-widest font-thin">
-        <div className="flex flex-col gap-2 md:gap-8 pt-8 md:pt-28 items-center justify-center font-jakarta text-xl font-thin uppercase sm:text-8xl md:text-9xl lg:text-6xl tracking-widest leading-tight">
-          <p className="text-xs md:text-lg text-yellow">
+      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12 font-thin tracking-widest">
+        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-8 lg:pt-28 lg:text-4xl 2xl:text-6xl">
+          <p className="text-xs tracking-[0.3rem] text-yellow 2xl:text-sm">
             Featured Menu
           </p>
           <p>Discover our most</p>

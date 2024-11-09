@@ -3,8 +3,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
@@ -15,38 +13,41 @@ const reviews: {
   review: string;
   stars: number;
 }[] = [
-    {
-      name: "Anna Mathew",
-      review:
-        "Bavette delivers an unforgettable steak experience! The food, service, and ambiance are second to none. We will definitely be coming back We booked private dining for our",
-      stars: 5,
-      date: "one day ago",
-      imageUrl: "/images/home/reviews/pictures/anna-mathew.svg",
-    },
-    {
-      name: "Gerrin Tom",
-      review:
-        "We booked private dining for our anniversary, and everything was perfect. The steak was melt-in-your-mouth delicious, and the staff was amazing!",
-      stars: 5,
-      date: "one day ago",
-      imageUrl: "/images/home/reviews/pictures/gerrin-tom.svg",
-    },
-    {
-      name: "Mery Elza",
-      review:
-        "Best steak I've ever had! The quality of the meat was outstanding, and the truffle fries were to die for. Highly recommend!",
-      stars: 5,
-      date: "one day ago",
-      imageUrl: "/images/home/reviews/pictures/mery-elza.svg",
-    },
-  ];
+  {
+    name: "Anna Mathew",
+    review:
+      "Bavette delivers an unforgettable steak experience! The food, service, and ambiance are second to none. We will definitely be coming back We booked private dining for our",
+    stars: 5,
+    date: "one day ago",
+    imageUrl: "/images/home/reviews/pictures/anna-mathew.svg",
+  },
+  {
+    name: "Gerrin Tom",
+    review:
+      "We booked private dining for our anniversary, and everything was perfect. The steak was melt-in-your-mouth delicious, and the staff was amazing!",
+    stars: 5,
+    date: "one day ago",
+    imageUrl: "/images/home/reviews/pictures/gerrin-tom.svg",
+  },
+  {
+    name: "Mery Elza",
+    review:
+      "Best steak I've ever had! The quality of the meat was outstanding, and the truffle fries were to die for. Highly recommend!",
+    stars: 5,
+    date: "one day ago",
+    imageUrl: "/images/home/reviews/pictures/mery-elza.svg",
+  },
+];
 
-const Reviews = ({ }) => {
+const Reviews = ({}) => {
   return (
-    <section id="testimonials" className="relative flex md:min-h-screen w-full justify-center">
-      <div className="flex h-full w-full flex-col max-w-[1500px] items-center justify-center md:gap-28 pt-12 tracking-widest font-thin">
-        <div className="flex flex-col gap-2 md:gap-8 pt-8 md:pt-28 items-center justify-center font-jakarta text-xl font-thin uppercase sm:text-3xl md:text-5xl lg:text-6xl tracking-widest leading-tight">
-          <p className="text-xs md:text-lg text-yellow">
+    <section
+      id="testimonials"
+      className="relative flex w-full justify-center lg:min-h-screen"
+    >
+      <div className="flex h-full w-full max-w-[1500px] flex-col items-center justify-center pt-12 font-thin tracking-widest lg:gap-28">
+        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-4 lg:pt-28 lg:text-4xl 2xl:gap-8 2xl:text-6xl">
+          <p className="text-xs tracking-[0.3rem] text-yellow 2xl:text-sm">
             Testimonial
           </p>
           <p>What Our </p>
@@ -59,7 +60,7 @@ const Reviews = ({ }) => {
                 {reviews.map((review, index) => (
                   <CarouselItem
                     key={index}
-                    className="flex w-full basis-full flex-col gap-6 rounded-sm px-6 py-8 md:basis-1/3"
+                    className="flex w-full basis-full flex-col gap-6 rounded-sm px-6 py-8 lg:basis-1/3"
                   >
                     <div className="flex w-full">
                       {Array.from({ length: review.stars }).map((_, index) => (
@@ -67,7 +68,7 @@ const Reviews = ({ }) => {
                       ))}
                     </div>
                     <div className="">
-                      <p className="text-sm md:text-base">{review.review}</p>
+                      <p className="text-sm lg:text-base">{review.review}</p>
                     </div>
                     <hr />
                     <div className="flex w-full items-center gap-2">
@@ -79,7 +80,9 @@ const Reviews = ({ }) => {
                       />
                       <div className="flex flex-col gap-1">
                         <p className="">{review.name}</p>
-                        <span className="text-xs md:text-sm">{review.date}</span>
+                        <span className="text-xs lg:text-sm">
+                          {review.date}
+                        </span>
                       </div>
                     </div>
                   </CarouselItem>

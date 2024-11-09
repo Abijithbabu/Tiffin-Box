@@ -15,8 +15,8 @@ import Scrollbar from "@/components/Scrollbar";
 
 export default function HomePage() {
   return (
-    <main className="relative h-full w-full font-jakarta bg-[#090909] text-white">
-      <div className="flex h-full w-full flex-col items-center justify-center md:px-40">
+    <main className="relative h-full w-full bg-[#090909] font-jakarta text-white">
+      <div className="flex h-full w-full flex-col items-center justify-center md:px-20 lg:px-28 2xl:px-40">
         <Navbar />
         <Hero />
         <AboutUs />
@@ -30,10 +30,10 @@ export default function HomePage() {
         <Community />
       </div>
       <Footer />
-      <div className="fixed top-1/2 right-40 transform -translate-y-1/2 hidden md:flex">
+      <div className="fixed right-20 top-1/2 hidden -translate-y-1/2 transform md:flex lg:right-28 2xl:right-40">
         <ViewMenu />
       </div>
-      <div className="fixed top-1/2 left-40 transform -translate-y-1/2 hidden md:flex">
+      <div className="fixed left-20 top-1/2 hidden -translate-y-1/2 transform md:flex lg:left-28 2xl:left-40">
         <Scrollbar />
       </div>
     </main>
