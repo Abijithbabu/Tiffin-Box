@@ -24,7 +24,7 @@ const WhyTiffinBox = () => {
                 the true flavors of South India.
               </p>
             </div>
-            <div className="flex flex-col pl-20 lg:pr-20">
+            <div className="flex w-full flex-col pl-20 lg:pl-0 lg:pr-20">
               <h1 className="uppercase">Expert Chefs</h1>
               <p className="pt-2 text-xs lg:pt-5 lg:text-sm 2xl:text-base">
                 Our chefs have years of experience crafting exquisite South
