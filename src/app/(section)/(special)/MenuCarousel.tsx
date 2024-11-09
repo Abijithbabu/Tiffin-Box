@@ -124,7 +124,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               {slides.map((item, index) => (
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full rounded-full border border-white/20 bg-white bg-opacity-5 backdrop-blur-lg 2xl:w-full">
-                    <div className="flex flex-col items-center gap-8 py-8 2xl:pb-16">
+                    <div className="flex flex-col items-center gap-8 py-8 2xl:py-0">
                       <div className="lg:hidden">
                         <ModelBox
                           src={item.modelUrl}
@@ -188,7 +188,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           width={500}
           height={500}
           objectFit="contain"
-          className="h-4/5 w-full pb-28 lg:h-full lg:w-1/2 2xl:h-4/5"
+          className="h-4/5 w-full pb-28 lg:h-full lg:w-1/2 2xl:h-[90%]"
         />
       </div>
     </>
