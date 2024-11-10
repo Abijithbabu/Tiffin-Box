@@ -24,14 +24,14 @@ const Hero = ({}) => {
             className="hidden lg:block"
           />
           <div className="hidden lg:flex flex-col gap-4">
-            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-5xl">
               Authentic
               <br />
             </p>
-            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-5xl">
               south&nbsp;Indian
             </p>
-            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-6xl">
+            <p className="font-thin uppercase tracking-[0.5rem] lg:tracking-[0.9rem] text-4xl 2xl:text-5xl">
               Cuisine
             </p>
           </div>

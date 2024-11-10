@@ -48,7 +48,7 @@ const Special = ({}) => {
   return (
     <section className="relative flex h-full w-full justify-center">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 2xl:gap-24 py-12 font-thin tracking-widest">
-        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-8 lg:pt-28 lg:text-4xl 2xl:text-6xl">
+        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-8 lg:pt-28 lg:text-4xl 2xl:text-5xl">
           <p className="text-xs tracking-[0.3rem] text-yellow 2xl:text-sm">
             Featured Menu
           </p>

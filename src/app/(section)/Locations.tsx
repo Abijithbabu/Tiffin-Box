@@ -11,7 +11,7 @@ const Locations = ({}) => {
           <p className="text-xs uppercase tracking-[0.3rem] text-yellow 2xl:text-base">
             Our Locations
           </p>
-          <div className="hidden flex-col gap-6 text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:flex lg:text-4xl 2xl:text-6xl">
+          <div className="hidden flex-col gap-6 text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:flex lg:text-4xl 2xl:text-5xl">
             <p>Find Us</p>
             <p>At These</p>
             <p>Convenient</p>

@@ -20,7 +20,7 @@ const OnlineOrder = ({}) => {
         <p className="text-xs uppercase tracking-[0.3rem] text-yellow 2xl:text-sm">
           Online Order
         </p>
-        <div className="hidden flex-col gap-4 text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:flex lg:text-4xl 2xl:gap-8 2xl:text-6xl">
+        <div className="hidden flex-col gap-4 text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:flex lg:text-4xl 2xl:gap-8 2xl:text-5xl">
           <p>Fresh South </p>
           <p>Indian Flavors </p>
           <p>Delivered!</p>

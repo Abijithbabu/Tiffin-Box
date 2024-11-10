@@ -10,7 +10,7 @@ const Chef = () => {
       className="flex w-full items-center justify-center lg:h-1 lg:min-h-screen"
     >
       <div className="flex h-full w-full flex-col items-center justify-center gap-8 font-thin tracking-widest lg:gap-28">
-        <div className="flex flex-col items-center justify-center gap-2 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-4 lg:text-4xl 2xl:gap-8 2xl:text-6xl">
+        <div className="flex flex-col items-center justify-center gap-2 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-4 lg:text-4xl 2xl:gap-8 2xl:text-5xl">
           <p className="text-xs tracking-[0.3rem] text-yellow 2xl:text-sm">
             Chef
           </p>

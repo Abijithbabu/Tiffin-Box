@@ -148,8 +148,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                       <div className="hidden 2xl:flex">
                         <ModelBox
                           src={item.modelUrl}
-                          width="400px"
-                          height="400px"
+                          width="300px"
+                          height="300px"
                           cameraOrbit="0deg 40deg 0deg 5m"
                           fieldOfView="25deg"
                           cameraTarget="0m 0m 0m"

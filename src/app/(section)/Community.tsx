@@ -29,7 +29,7 @@ const Community = ({}) => {
       className="relative flex w-full justify-center lg:min-h-screen"
     >
       <div className="flex h-full w-full max-w-[1500px] flex-col items-center justify-center gap-8 font-thin tracking-[0.5rem] lg:tracking-[0.9rem] lg:gap-28">
-        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-4 lg:pt-24 lg:text-4xl 2xl:gap-8 2xl:text-6xl">
+        <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-4 lg:pt-24 lg:text-4xl 2xl:gap-8 2xl:text-5xl">
           <p className="text-xs tracking-[0.3rem] text-yellow 2xl:text-sm">
             Instagram
           </p>
