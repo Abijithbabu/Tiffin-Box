@@ -7,7 +7,7 @@ const AboutUs = ({}) => {
   return (
     <section
       id="about-us"
-      className="flex w-full flex-col items-center justify-center pt-8 lg:h-1 lg:min-h-[100vh] lg:flex-row"
+      className="flex w-full flex-col items-center justify-center pt-8 lg:h-1 min-h-[56rem] lg:min-h-screen lg:flex-row"
     >
       <div className="relative flex h-full min-h-[400px] w-full items-center justify-center lg:w-1/2">
         <Image

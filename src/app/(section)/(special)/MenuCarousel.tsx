@@ -117,7 +117,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="z-50 flex h-screen w-full flex-col items-center">
+      <div className="z-50 flex min-h-[56rem] lg:min-h-screen  w-full flex-col items-center">
         <div className="embla-menu">
           <div className="overflow-hidden lg:overflow-visible" ref={emblaRef}>
             <div className="embla-menu__container">
@@ -188,7 +188,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           width={500}
           height={500}
           objectFit="contain"
-          className="h-4/5 w-full pb-28 lg:h-full lg:w-1/2 2xl:h-[90%]"
+          className="h-4/5 w-full md:w-4/5 pb-28 xl:h-full lg:w-1/2 2xl:h-[90%]"
         />
       </div>
     </>

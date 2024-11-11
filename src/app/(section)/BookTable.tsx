@@ -7,7 +7,7 @@ const BookTable = ({}) => {
   return (
     <section
       id="book-table"
-      className="flex h-1 min-h-[100vh] w-full flex-col items-center justify-center pt-10 lg:pt-40 lg:flex-row"
+      className="flex h-1 min-h-[56rem] lg:min-h-screen w-full flex-col items-center justify-center pt-10 lg:pt-40 lg:flex-row"
     >
       <div className="relative flex h-full min-h-[400px] w-full items-center justify-center lg:w-1/2">
         <Image

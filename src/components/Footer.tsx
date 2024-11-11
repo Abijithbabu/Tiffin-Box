@@ -42,7 +42,7 @@ const Footer = ({}) => {
           <p className="tracking-widest">Info@tiffinbox.co.uk</p>
           <p>Allerton Rd, Liverpool L25 7RE</p>
         </div>
-        <div className="flex w-full flex-row flex-wrap items-center justify-center gap-3 text-center uppercase md:w-1/2 md:justify-between md:gap-0">
+        <div className="flex w-full flex-row flex-wrap items-center justify-center gap-3 text-center uppercase lg:w-1/2 lg:justify-between lg:gap-0">
           <Button
             variant="link"
             className="w-fit items-center justify-start px-0 py-0 text-start uppercase tracking-widest text-white"

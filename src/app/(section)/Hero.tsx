@@ -12,9 +12,9 @@ const Hero = ({}) => {
   return (
     <section
       id="hero"
-      className="flex min-h-[50vh] w-full justify-center p-4 lg:min-h-screen lg:pl-40"
+      className="flex min-h-[40rem] w-full justify-center p-4 lg:min-h-screen lg:pl-40"
     >
-      <div className="flex min-h-[50vh] w-full flex-col justify-center lg:h-1 lg:min-h-screen lg:flex-row">
+      <div className="flex min-h-[40rem] w-full flex-col justify-center lg:h-1 lg:min-h-screen lg:flex-row">
         <div className="z-10 order-2 flex h-full w-full items-center justify-around gap-16 text-stone-400 lg:order-1 lg:w-1/3 lg:flex-col lg:items-start lg:justify-start lg:pt-40">
           <Image
             src="/images/landing-page/logo.png"

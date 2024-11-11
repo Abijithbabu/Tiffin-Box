@@ -5,7 +5,7 @@ const WhyTiffinBox = () => {
   return (
     <section
       id="why-tiffin-box"
-      className="relative flex min-h-screen w-full justify-center"
+      className="relative flex lg:min-h-screen w-full justify-center"
     >
       <div className="flex h-full w-full max-w-[1500px] flex-col items-center justify-center gap-8 pt-12 font-thin tracking-widest lg:gap-28">
         <div className="flex flex-col items-center justify-center gap-2 pt-8 font-jakarta text-xl font-thin uppercase leading-tight tracking-[0.5rem] lg:tracking-[0.9rem] sm:text-3xl lg:gap-8 lg:pt-28 lg:text-4xl 2xl:text-5xl">
@@ -14,7 +14,7 @@ const WhyTiffinBox = () => {
           </p>
           <p>Our Specialties</p>
         </div>
-        <div className="relative flex h-full min-h-[90vh] w-full flex-col justify-center px-2 lg:px-0 lg:flex-row">
+        <div className="relative flex h-full lg:min-h-[90vh] w-full flex-col justify-center px-2 lg:px-0 lg:flex-row">
           <div className="flex w-full flex-col justify-around gap-8 px-4 lg:w-1/4 lg:items-end lg:gap-0 lg:px-0 lg:text-end">
             <div className="flex w-4/5 flex-col">
               <h1 className="uppercase">Authentic South</h1>

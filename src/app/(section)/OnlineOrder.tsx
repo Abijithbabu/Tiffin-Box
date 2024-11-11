@@ -14,7 +14,7 @@ const OnlineOrder = ({}) => {
   return (
     <section
       id="online-order"
-      className="relative flex h-1 min-h-[600px] w-full items-center justify-center lg:min-h-screen"
+      className="relative flex h-1 min-h-[40rem] lg:min-h-screen w-full items-center justify-center"
     >
       <div className="z-10 flex h-full w-full flex-col items-center justify-start gap-8 p-8 pt-20 font-jakarta tracking-widest text-white lg:w-3/5 lg:items-start lg:justify-center lg:p-16 2xl:p-28">
         <p className="text-xs uppercase tracking-[0.3rem] text-yellow 2xl:text-sm">
