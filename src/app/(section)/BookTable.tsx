@@ -30,7 +30,7 @@ const BookTable = ({}) => {
         <div className="px-12 text-center text-xl font-thin uppercase leading-normal tracking-[0.5rem] lg:tracking-[0.9rem] lg:hidden lg:leading-tight">
           <p>Planning a Meal At The Tiffin Box</p>
         </div>
-        <p className="text-center text-sm lg:text-start lg:text-base 2xl:w-4/5 2xl:text-lg">
+        <p className="text-center text-sm lg:text-start lg:text-base 2xl:w-4/5">
           Craving your favorite South Indian dishes? Enjoy the rich, authentic
           flavors of The Tiffin Box from the comfort of your home. Order online
           for a quick and easy delivery straight to your doorstep. Our dishes

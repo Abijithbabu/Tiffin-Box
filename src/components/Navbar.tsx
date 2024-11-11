@@ -29,7 +29,7 @@ const Navbar = ({ position = "static" }: { position?: "static" | "fixed" }) => {
   return (
     <nav
       className={cn(
-        "absolute top-0 z-50 flex w-full items-center px-4 pt-10 transition-all duration-300 ease-in-out md:px-10 lg:px-12 2xl:px-28",
+        "absolute top-0 z-50 flex w-full items-center px-4 pt-10 transition-all duration-300 ease-in-out md:px-10 lg:px-12 2xl:px-20",
         isScrolled && "max-w-[1300px]",
       )}
     >

@@ -28,7 +28,7 @@ const OnlineOrder = ({}) => {
         <div className="text-center text-xl font-thin uppercase leading-normal tracking-[0.5rem] lg:tracking-[0.9rem] lg:hidden lg:leading-tight">
           <p>Fresh South Indian Flavors Delivered!</p>
         </div>
-        <p className="w-full text-center text-sm lg:w-3/5 lg:text-start lg:text-base 2xl:text-lg">
+        <p className="w-full text-center text-sm lg:w-3/5 lg:text-start lg:text-base">
           Craving your favorite South Indian dishes? Enjoy the rich, authentic
           flavors of The Tiffin Box from the comfort of your home. Order online
           for a quick and easy delivery straight to your doorstep. Our dishes
