@@ -28,7 +28,7 @@ const Locations = ({}) => {
             alt="locations"
             objectFit="contain"
           />
-          <div className="absolute right-2 top-12 rounded-md bg-white bg-opacity-5 p-4 text-xs uppercase tracking-[0.4rem] text-white backdrop-blur-lg lg:right-0 lg:top-36 lg:p-6 2xl:right-8 2xl:p-10 2xl:text-sm">
+          <div className="absolute right-2 top-12 rounded-md bg-white bg-opacity-5 p-4 text-xs uppercase tracking-[0.4rem] text-white backdrop-blur-lg lg:right-0 lg:top-[20%] lg:p-6">
             <p className="flex flex-col pb-2 lg:pb-4 2xl:pb-8">
               <span className="w-full">tiffin box</span>
               <span className="w-full">Allerton Rd,</span>
